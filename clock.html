@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock-Animation</title>
+    <link rel="stylesheet" href="clock.css" class="css">
+    <script src="clock.js"></script>
+</head>
+<body>
+    <!-- <audio src="clock.mp3" ></audio> -->
+    
+      
+    <div id="clockcontainer">
+        <div id="hour"></div>
+        <div id="min"></div>
+        <div id="sec"></div>
+    </div>
+    <br/><br/>
+    
+    
+    <div id="buttons">
+        <input type="datetime-local" id="alarmtime">
+        <button id="alarmbutton" onclick="setalarm(this);">Set Alarm</button>
+    </div>
+    <div id="alarmoptions" style="display: none;">
+        <button id="snoozebutton" onclick="snooze();">Snooze 5 minutes</button>
+        <button id="stopbutton" onclick="stopAlarm();" >Stop Alarm</button>
+    </div>
+    
+</body>
+</html>
